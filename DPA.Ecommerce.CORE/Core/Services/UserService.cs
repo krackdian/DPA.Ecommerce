@@ -58,7 +58,7 @@ namespace DPA.Ecommerce.CORE.Core.Services
                 Email = dto.Email,
                 Password = HashPassword(dto.Password),
                 IsActive = true,
-                Type = dto.Type
+                Type = "U"
             };
 
             var id = await _userRepository.CreateAsync(user);
